@@ -22,7 +22,7 @@ enableGitInfo = true
 [languages]
 [languages.pt]
   languageName = 'Português'
-  contentDir = 'content.pt'
+  contentDir = 'content/pt'
   weight = 1
 
 [menu]
@@ -41,6 +41,8 @@ enableGitInfo = true
   weight = 30
 
 [params]
+  contentDir = 'content/pt'
+
   # (Optional, default light) Sets color theme: light, dark or auto.
   # Theme 'auto' switches between dark and light modes based on browser/os preferences
   BookTheme = 'auto'
@@ -81,7 +83,7 @@ enableGitInfo = true
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Edit path must point to root directory of repo.
-  BookEditPath = 'edit/main'
+  BookEditPath = 'blob/main'
 
   # Configure the date format used on the pages
   # - In git information
