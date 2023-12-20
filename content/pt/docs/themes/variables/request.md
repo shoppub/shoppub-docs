@@ -7,7 +7,7 @@ title: "request"
 Objeto que representa uma requisição.
 
 
-### Atributos
+## Atributos
 
 {{< details "host - <i>string</i>" close >}}
 
@@ -52,6 +52,8 @@ O *tipo de página* que está sendo requisitada.
 Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.host}`.
 
 {{< /details >}}
+
+## Exemplos
 
 ### Exemplo 1
 ``` json
