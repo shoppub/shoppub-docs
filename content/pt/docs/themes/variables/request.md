@@ -21,7 +21,7 @@ O *hostname* do request. Exemplo: `demostore.myshoppub.com`.
 
 O *path* do request. Exemplos:
 - `/` (sendo a *home*)
-- `/p/dunk-low-retro-mens-shoes` (sendo um *detalhe de produto*)
+- `/produto/dunk-low-retro-mens-shoes/` (sendo um *detalhe de produto*)
 
 > **Nota**
 > 
@@ -41,7 +41,7 @@ O *tipo de página* que está sendo requisitada.
 | `product` |
 | `page` |
 | `search` |
-| `collection` |
+| `category` |
 
 {{< /details >}}
 
@@ -59,7 +59,7 @@ Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.h
 ``` json
 {
     "host": "demostore.myshoppub.com",
-    "path": "/p/dunk-low-retro-mens-shoes",
+    "path": "/produto/dunk-low-retro-mens-shoes/",
     "page_type": "product",
     "origin": "https://demostore.myshoppub.com"
 }
