@@ -56,6 +56,7 @@ Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.h
 ## Exemplos
 
 ### Exemplo 1
+
 ``` json
 {
     "host": "demostore.myshoppub.com",
@@ -66,6 +67,7 @@ Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.h
 ```
 
 ### Exemplo 2
+
 ``` json
 {
     "host": "demostore.myshoppub.com",
@@ -73,4 +75,23 @@ Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.h
     "page_type": "404",
     "origin": "https://demostore.myshoppub.com"
 }
+```
+
+
+## Exemplos de uso
+
+### Exemplo 1
+
+``` jinja
+{% if request.page_type == "home" %}
+    <link rel="stylesheet" type="text/css" href="{{ 'css/home.css' | static_url }}">
+{% endif %}
+```
+
+### Exemplo 2
+
+``` jinja
+<script>
+    window.BASE_URL = "{{ request.origin }}";
+</sript>
 ```
