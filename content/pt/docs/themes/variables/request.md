@@ -93,5 +93,5 @@ Valor pré-concatenado com o *schema* da requisição, sendo `https://{request.h
 ``` jinja
 <script>
     window.BASE_URL = "{{ request.origin }}";
-</sript>
+</script>
 ```
